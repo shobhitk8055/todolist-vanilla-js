@@ -1,0 +1,160 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: lightgrey;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.card {
+    width: 40vw;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+    box-sizing: border-box;
+}
+
+.myInput {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 10px 40px 10px 40px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #eee;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+}
+
+.input-field {
+    padding: 2%;
+    position: relative;
+}
+
+.start-icon {
+    position: absolute;
+    top: 40%;
+    left: 25px;
+}
+
+.end-icon {
+    position: absolute;
+    top: 40%;
+    right: 25px;
+    cursor: pointer;
+}
+.minor-text{
+    color: #ced4da;
+    font-size: 12px;
+    cursor: pointer;
+}
+.minor-text:hover{
+    color: #000;
+}
+
+.pr-1{
+    padding-right: 5px;
+}
+.pr-2{
+    padding-right: 10px;
+}
+
+.px-3{
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 10px;
+}
+
+.pb-3{
+    padding-bottom: 3px;
+}
+
+hr.line {
+    border: 0.3px solid #eeeeee;
+    background-color: #eeeeee;
+}
+.task-lists > ul {
+    margin-top: 0px;
+    list-style: none;
+    padding-inline-start: 20px;
+    font-size: 17px;
+}
+.task-lists li {
+    padding-bottom: 13px;
+}
+.d-none{
+    display: none !important;
+}
+.list-content {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.task-text{
+    flex-grow: 1;
+}
+#totalItems{
+    color: black;
+}
+.active{
+    color: black;
+}
+
+.text-center{
+    text-align: center;
+}
+.mt-0{
+    margin-top: 0;
+}
+.end-icon{
+    display: none;
+}
+
+.enter{
+    animation-name: enter;
+    animation-duration: 1s;
+    position: relative;
+}
+
+@keyframes exit {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 1000px;
+    }
+}
+.exit{
+    animation-name: exit;
+    animation-duration: 1s;
+    position: relative;
+}
+
+@keyframes enter {
+    from {
+        top: 40px;
+    }
+    to {
+        top: 0px;
+    }
+}

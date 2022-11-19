@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Fonts added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <!-- //Font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="d-flex justify-center" id="main">
+        <div class="card">
+            <!-- Input field Starts -->
+            <div class="input-field">
+                <i class="fa-solid fa-list-check start-icon"></i>
+                <input class="myInput" type="text" id="myInput" />
+                <i class="fa-solid fa-plus end-icon" style="display: none;" id="endIcon"></i>
+            </div>
+            <!-- Input field End -->
+
+            <!-- Tasks Controls starts -->
+            <div class="px-3 pb-3 d-flex justify-between border-bottom">
+                <span class="minor-text" id="completeAll"><i class="fa-solid fa-check-double pr-1"></i> Complete all
+                    tasks</span>
+                <span class="minor-text" id="clear">Clear completed</span>
+            </div>
+            <!-- Tasks Controls End -->
+
+            <div class="px-3">
+                <hr class="line" />
+            </div>
+            <!-- Tasks list starts -->
+            <div class="task-lists">
+                <p class="text-center mt-0">No items</p>
+                <ul></ul>
+            </div>
+            <!-- Tasks list end -->
+
+            <div class="px-3 pb-3">
+                <hr class="line" />
+            </div>
+
+            <!-- Task stats starts -->
+            <div class="px-3 d-flex justify-between border-bottom">
+                <span class="minor-text">
+                    <span id="totalItems">0</span> Tasks</span></span>
+                <span id="taskStatus">
+                    <span class="pr-2 minor-text active" id="all">
+                        All
+                    </span>
+                    <span class="pr-2 minor-text" id="uncompleted">
+                        Uncomplete (<span>0</span>)
+                    </span>
+                    <span class="pr-2 minor-text" id="completed">
+                        Complete (<span>0</span>)
+                    </span>
+                </span>
+            </div>
+            <!-- Task stats end -->
+
+        </div>
+    </div>
+    
+    <!-- Blueprint for a single task start -->
+    <div id="blueprint" style="display: none;">
+        <li class="enter">
+            <span class="list-content">
+                <span class="pr-2">
+                    <i class="fa-regular fa-circle unchecked"></i>
+                    <i class="fa-solid fa-circle-check checked" style="display: none;"></i>
+                </span>
+                <span class="task-text pr-2"> Learn how to use Vue.Js </span>
+                <i class="fa-regular fa-circle-xmark deleteMark"></i>
+            </span>
+        </li>
+    </div>
+    <!-- Blueprint for a single task end-->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
